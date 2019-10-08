@@ -9,11 +9,15 @@ public class AccountTest {
             Scanner input = new Scanner(System.in);
             System.out.println("Welcome User, Enter your name");
             String name = input.nextLine();
+            Account customer = new Account(name, 0);
+
             System.out.println(name + ", enter deposit amount for the account");
             double deposit =  input.nextDouble();
+            customer.depositMoney(deposit);
 
-            Account customerTwo = new Account(name, deposit);
-            customerTwo.getCustomerDetails();
+
+
+            customer.getCustomerDetails();
 
         }catch (Exception exception) {
             System.out.println("Invalid Input. Please try again!!!");

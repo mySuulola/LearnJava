@@ -9,7 +9,7 @@ public class Account {
         if(balance > 0.0) {
             this.balance_ = balance;
         }
-        System.out.println("Account created" + name);
+        System.out.println("Account created " + name);
     }
 
     public void getCustomerDetails() {
@@ -17,6 +17,7 @@ public class Account {
     }
 
     public void depositMoney(double deposit) {
+        System.out.println("Depositing " + deposit + "...");
         if(deposit > 0) {
             balance_ = balance_ + deposit;
         }

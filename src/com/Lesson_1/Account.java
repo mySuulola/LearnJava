@@ -9,11 +9,11 @@ public class Account {
         if(balance > 0.0) {
             this.balance_ = balance;
         }
+        System.out.println("Account created" + name);
     }
 
     public void getCustomerDetails() {
-        System.out.printf("the customer name is %s%n", name_);
-        System.out.printf("the customer name is %s%n", balance_);
+        System.out.printf("the account name is " + name_ + " with a deposit of " + balance_);
     }
 
     public void depositMoney(double deposit) {

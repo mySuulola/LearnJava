@@ -22,5 +22,4 @@ public class Account {
             balance_ = balance_ + deposit;
         }
     }
-
 }

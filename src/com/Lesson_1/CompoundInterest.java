@@ -7,6 +7,7 @@ public class CompoundInterest {
         double rate = 0.05;
         int numberOfYears = 10;
 
+
         for(int year = 1; year <= numberOfYears; year++ ) {
             amount = principal * Math.pow(1.0 + rate, year);
             System.out.printf("%4d%,20.2f%n", year, amount);

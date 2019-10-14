@@ -25,7 +25,8 @@ public class Student {
     public String getLetterGrade() {
         System.out.println("Average is " + average_);
         double grade = this.average_;
-        String letterGrade = "";
+         String letterGrade = "";
+
         if(grade > 69) {
             letterGrade = "A";
         }else if(grade >= 60.0) {

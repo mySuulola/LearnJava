@@ -7,6 +7,7 @@ public class AccountTest {
 
         try{
             Scanner input = new Scanner(System.in);
+
             System.out.println("Welcome User, Enter your name");
             String name = input.nextLine();
             Account customer = new Account(name, 0);
@@ -15,13 +16,10 @@ public class AccountTest {
             double deposit =  input.nextDouble();
             customer.depositMoney(deposit);
 
-
-
             customer.getCustomerDetails();
 
         }catch (Exception exception) {
             System.out.println("Invalid Input. Please try again!!!");
         }
-
     }
 }
